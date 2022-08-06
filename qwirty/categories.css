@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&display=swap');
+
+.categories {
+    display: flex;
+    flex: 1 0;
+    flex-basis: 200px;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.categories a {
+    font-size: 1em;
+    text-decoration: none;
+    font-family: Dosis;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    background-color: #44b;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 7px;
+}
+
+.categories a:hover {
+    box-shadow: 0 2px 5px -2px black;
+}
+
+@media screen and (max-width: 768px) {
+    .categories {
+        flex-direction: row;
+        flex: 1 1;
+        flex-wrap: nowrap;
+        
+    }
+
+    .categories a {
+        padding-bottom: 0.5em;
+        margin-left: 0;
+        box-shadow: none;
+        text-align: center;
+        padding-top: .5em;
+        padding-left: .25em;
+        padding-right: .25em;
+        margin-right: .2em;
+        width: 100%
+    }
+
+    .categories a:hover {
+        text-decoration: underline;
+        color: white;
+        
+    }
+
+    #books {
+        padding-left: 2em;
+    }
+
+    .categroies:first-child {
+        margin-left: 2em;
+    }
+    
+}
+

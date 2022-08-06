@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=IM+Fell+Great+Primer+SC&family=Open+Sans&display=swap');
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #40b;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.short-width {
+    display: flex;
+}
+
+.full-width {
+    display: none;
+}
+
+.sub-nav {
+    display: flex;
+    
+}
+
+.search-form {
+    display: flex;
+    flex-grow: 2;
+    padding: 0.25em 0.5em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Dosis';
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.nav-list a {
+    padding-right: 15px;
+    /* border-right: 1px solid white; */
+}
+
+.nav-list li {
+    list-style: none;
+    border-right: none;
+}
+
+.nav-list li:last-of-type a {
+    border-right: none; 
+    
+}
+
+input {
+    display: flex;
+    flex-grow: 2;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid blue;
+    outline: none;
+    align-self: center;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+button {
+    
+    padding: 4px 6px;
+    border: none;
+    border-bottom: 1px solid blue;
+    border-right: 1px solid blue;
+    line-height: 0;
+
+    margin-top: 15px;
+    padding-bottom: 0;
+}
+
+.company-name {
+    font-family: "IM Fell Great Primer Sc", serif;
+    font-size: 34px;
+    color: #33a;
+    /* margin: 0 1rem; */
+    padding-left: 1.5rem;
+    margin-left: 0.75rem;
+    margin-top: 1rem;
+}
+
+.credit-offer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: red;
+    font-size: 18px;
+    padding: 0.25rem 0.5rem;
+    /* box-sizing: border-box; */
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .short-width {
+        display: none;
+    }
+
+    .full-width {
+        display: flex;
+    }
+
+}
+

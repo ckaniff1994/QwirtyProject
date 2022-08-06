@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  header, footer { 
+    flex: none; 
+  }
+  
+  main {
+    display: flex;
+    flex: 1 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    
+    }
+
+    main nav {
+      justify-content: center;
+      
+    }
+
+    a {
+      padding-left: 0.2em;
+      padding-right: 0.2em;
+      
+    }
+  }
